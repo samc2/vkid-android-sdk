@@ -1,4 +1,4 @@
-name: Translate README
+⁶name: Translate README
 
 on:
   push:
@@ -15,10 +15,10 @@ jobs:
         with:
           node-version: 12.x
       # ISO Langusge Codes: https://cloud.google.com/translate/docs/languages  
-      - name: Adding README - Chinese Simplified
+      - name: Adding README - English
         uses: dephraiim/translate-readme@main
         with:
-          LANG: zh-CN
+          LANG: en
       - name: Adding README - Chinese Traditional
         uses: dephraiim/translate-readme@main
         with:
@@ -27,11 +27,11 @@ jobs:
         uses: dephraiim/translate-readme@main
         with:
           LANG: hi
-      - name: Adding README - Arabic
+      - name: Adding README - Russian
         uses: dephraiim/translate-readme@main
         with:
-          LANG: ar
-      - name: Adding README - French
+          LANG: ru
+      - name: Adding README - Spanish
         uses: dephraiim/translate-readme@main
         with:
-          LANG: fr
+          LANG: es
